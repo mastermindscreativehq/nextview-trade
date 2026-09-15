@@ -1,0 +1,37 @@
+# NEXTVIEW TRADE — Supabase local development configuration.
+# Used by the Supabase CLI (`supabase start`). Production uses Supabase Cloud:
+# apply supabase/migrations/*.sql in the remote project's SQL editor.
+
+project_id = "nextview-trade"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "graphql_public"]
+
+[db]
+port = 54322
+major_version = 15
+
+[studio]
+enabled = true
+port = 54323
+
+[inbucket]
+enabled = true
+port = 54324
+
+[auth]
+enabled = true
+site_url = "http://localhost:3000"
+additional_redirect_urls = ["http://localhost:3000/**"]
+jwt_expiry = 3600
+enable_signup = true
+
+[auth.email]
+enable_signup = true
+double_confirm_changes = false
+enable_confirmations = true
+
+[realtime]
+enabled = true

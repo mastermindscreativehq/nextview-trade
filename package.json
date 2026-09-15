@@ -1,0 +1,21 @@
+{
+  "name": "nextview-trade",
+  "private": true,
+  "version": "0.1.0",
+  "description": "NEXTVIEW TRADE — Premium paper trading platform",
+  "scripts": {
+    "dev": "pnpm --filter @nextview/web dev",
+    "dev:api": "pnpm --filter @nextview/api dev",
+    "dev:all": "pnpm --parallel --filter @nextview/web --filter @nextview/api run dev",
+    "build": "pnpm --filter @nextview/web build",
+    "build:api": "pnpm --filter @nextview/api build",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test",
+    "clean": "pnpm -r clean"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@9.15.0"
+}
